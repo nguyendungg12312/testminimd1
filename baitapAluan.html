@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>    //bai 1:
+
+// for ( let i=1000;i>=1;i--){
+//     document.write(i +'<br>')
+// }
+
+// bai 2:
+// function inSoChan(n){
+//     for (let i=1 ;i<n;i++){
+//             if (i%2==0){
+//                 console.log(i)
+//             }
+//     }
+// }
+let n = +prompt("Nhap so")
+// inSoChan(n)
+
+//Bai 3:
+// function inSoLe(n){
+//     for (let i=1 ;i<n;i++){
+//             if ((i-1)%2==0){
+//                 console.log(i)
+//             }
+//     }
+// }
+// inSoLe(n)
+
+//Bai 4:
+
+// function inSoChia5(n){
+//     for (let i=1;i<=n;i++){
+//         if (i%5==0){
+//             console.log(i)
+//         }
+//     }
+// }
+// inSoChia5(n)
+
+//Bai 5:
+// function daoNguoc(n){
+//     console.log(n)
+// n = n.toString() // chuyển về chuỗi
+// console.log(n)
+// n = n.split(''); // chuyển về mảng
+//    console.log(n)
+// n = n.reverse(); // đảo ngược mảng
+//    console.log(n)
+// n = n.join(''); // mảng sang chuỗi
+//    console.log(n)
+// n = parseInt(n); //chuỗi về số nguyên
+//     console.log(n)
+//   return n;
+// }
+// document.write(daoNguoc(n))
+gi
+
+
+//Bai 6:
+function inSoNguyenTo(n) {
+//     for (let i = 2; i < n; i++) {
+//         if (n % i == 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+
+let i = 2 ;
+while (i < n){
+if (n % i==0){
+return false;
+}
+i++;
+}
+return true;
+}
+
+
+// for ( i=2;i < n;i++){
+//     if (inSoNguyenTo(i)){
+// document.write(i + ',')
+//     }
+// }
+
+// // Bai 7:
+let i = 2;
+while ( i < n ){
+if (inSoNguyenTo(i)){
+document.write(i + ',');
+}
+i++
+}
+
+// Bai 8:
+//     function inSoFibonacci(n){
+//         let a = 0;
+//         let b = 1;
+//         for (let i=0;i<n;i++){
+//             let tem  = a + b;
+//              a = b;
+//              b = tem;
+//             document.write(a + '<br>')
+//         }
+//     }
+// inSoFibonacci(n)
+
+// Bai 9:
+// function tinhGiaiThua(n){
+//     let total = 1;
+//     for (let i=1;i<=n;i++){
+//         total = total* i;
+//     }
+//     document.write(total);
+// }
+// tinhGiaiThua(n)
+
+// Bai 10:
+// function tinhBieuThuc(n) {
+//     let sum = 1;
+//     for (let i = 2; i <= n; i++) {
+//         sum += 1 / Math.pow(i, 3)
+//     }
+//     return sum.toFixed(5)
+// }
+// document.write(tinhBieuThuc(n))
+
+
+</script>
+
+
+</body>
+</html>
